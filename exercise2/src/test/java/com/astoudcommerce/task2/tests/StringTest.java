@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class StringTest {
 
 	@Test
-	public void printAllUncompletedTask() {
+	public void printAllPrinces() {
 		String data="product1: 12.50$; product2: 13$; product3: 1 598.00$";
 		String[] items = data.replaceAll("product[0-9]: |;| ", "").split("[$]");
 		List<Double> itemList=new ArrayList<Double>();
