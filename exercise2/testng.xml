@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >"UTF-8"?>
+<suite name="TestNgMavenExampleSuite" parallel="false">
+<listeners>
+		<listener
+			class-name="customisedreport.support.CustomisedListener" />
+	</listeners>
+  <test name="TestNgMavenTest">
+    <classes>
+      <class name="com.astoudcommerce.task2.tests.StringTest"/>
+    </classes>
+  </test>
+</suite>

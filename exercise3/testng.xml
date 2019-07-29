@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNgMavenExampleSuite" parallel="false" thread-count="1">
+  <test name="purePOM">
+    <classes>   
+      <class name="com.astoudcommerce.task3.tests.HerokuappTestPOM"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNgMavenExampleSuite" parallel="false"
+	thread-count="1">
+	<listeners>
+		<listener
+			class-name="customisedreport.support.CustomisedListener" />
+	</listeners>
+	<test name="Automation Test Results" >
+		<method-selectors>
+			<method-selector>
+				<script language="beanshell"><![CDATA[
+         
+         !testngMethod.getMethodName().contains("debug");
+         
+         ]]></script>
+			</method-selector>
+		</method-selectors>
+		<packages>
+			<package name="com.astoudcommerce.task5.tests"></package>
+		</packages>
+	</test>
+</suite>

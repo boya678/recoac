@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNgMavenExampleSuite" parallel="false"
+	thread-count="1">
+	<listeners>
+		<listener
+			class-name="customisedreport.support.CustomisedListener" />
+	</listeners>
+	<test name="purePOM">
+		<classes>
+			<class name="com.astoudcommerce.task4.tests.BancolombiaTest" />
+		</classes>
+	</test>
+</suite>
